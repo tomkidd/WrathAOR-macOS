@@ -64,7 +64,6 @@
 		A14ABF01240E021E00C9292A /* image_png.c in Sources */ = {isa = PBXBuildFile; fileRef = A14ABE1A240E021E00C9292A /* image_png.c */; };
 		A14ABF03240E021E00C9292A /* r_shadow.c in Sources */ = {isa = PBXBuildFile; fileRef = A14ABE20240E021E00C9292A /* r_shadow.c */; };
 		A14ABF05240E021E00C9292A /* sv_move.c in Sources */ = {isa = PBXBuildFile; fileRef = A14ABE23240E021E00C9292A /* sv_move.c */; };
-		A14ABF06240E021E00C9292A /* cap_avi.c in Sources */ = {isa = PBXBuildFile; fileRef = A14ABE24240E021E00C9292A /* cap_avi.c */; };
 		A14ABF0A240E021E00C9292A /* console.c in Sources */ = {isa = PBXBuildFile; fileRef = A14ABE29240E021E00C9292A /* console.c */; };
 		A14ABF0C240E021E00C9292A /* model_sprite.c in Sources */ = {isa = PBXBuildFile; fileRef = A14ABE2D240E021E00C9292A /* model_sprite.c */; };
 		A14ABF0D240E021E00C9292A /* prvm_edict.c in Sources */ = {isa = PBXBuildFile; fileRef = A14ABE32240E021E00C9292A /* prvm_edict.c */; };
@@ -79,7 +78,6 @@
 		A14ABF29240E021E00C9292A /* cd_shared.c in Sources */ = {isa = PBXBuildFile; fileRef = A14ABE5E240E021E00C9292A /* cd_shared.c */; };
 		A14ABF2C240E021E00C9292A /* mathlib.c in Sources */ = {isa = PBXBuildFile; fileRef = A14ABE62240E021E00C9292A /* mathlib.c */; };
 		A14ABF2D240E021E00C9292A /* collision.c in Sources */ = {isa = PBXBuildFile; fileRef = A14ABE64240E021E00C9292A /* collision.c */; };
-		A14ABF2E240E021E00C9292A /* SDLMain.m in Sources */ = {isa = PBXBuildFile; fileRef = A14ABE65240E021E00C9292A /* SDLMain.m */; };
 		A14ABF2F240E021E00C9292A /* cap_ogg.c in Sources */ = {isa = PBXBuildFile; fileRef = A14ABE67240E021E00C9292A /* cap_ogg.c */; };
 		A14ABF32240E021E00C9292A /* gl_rsurf.c in Sources */ = {isa = PBXBuildFile; fileRef = A14ABE6A240E021E00C9292A /* gl_rsurf.c */; };
 		A14ABF33240E021E00C9292A /* cl_video.c in Sources */ = {isa = PBXBuildFile; fileRef = A14ABE6C240E021E00C9292A /* cl_video.c */; };
@@ -109,6 +107,7 @@
 		A14ABF5C240E021E00C9292A /* svvm_cmds.c in Sources */ = {isa = PBXBuildFile; fileRef = A14ABEA5240E021E00C9292A /* svvm_cmds.c */; };
 		A14ABF5D240E021E00C9292A /* portals.c in Sources */ = {isa = PBXBuildFile; fileRef = A14ABEA6240E021E00C9292A /* portals.c */; };
 		A14ABF65240E097100C9292A /* snd_sdl.c in Sources */ = {isa = PBXBuildFile; fileRef = A14ABE68240E021E00C9292A /* snd_sdl.c */; };
+		A1F0BA9A24102D370008C263 /* cap_avi.c in Sources */ = {isa = PBXBuildFile; fileRef = A14ABE24240E021E00C9292A /* cap_avi.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -844,7 +843,6 @@
 				A14ABF10240E021E00C9292A /* host_cmd.c in Sources */,
 				A14ABEF4240E021E00C9292A /* cmd.c in Sources */,
 				A14ABF0D240E021E00C9292A /* prvm_edict.c in Sources */,
-				A14ABF2E240E021E00C9292A /* SDLMain.m in Sources */,
 				A14ABF18240E021E00C9292A /* r_lightning.c in Sources */,
 				A14ABF29240E021E00C9292A /* cd_shared.c in Sources */,
 				A14ABF00240E021E00C9292A /* mvm_cmds.c in Sources */,
@@ -864,7 +862,6 @@
 				A14ABEBD240E021E00C9292A /* model_brush.c in Sources */,
 				A14ABEEE240E021E00C9292A /* sv_phys.c in Sources */,
 				A14ABF32240E021E00C9292A /* gl_rsurf.c in Sources */,
-				A14ABF06240E021E00C9292A /* cap_avi.c in Sources */,
 				A14ABEEB240E021E00C9292A /* cl_input.c in Sources */,
 				A14ABEFE240E021E00C9292A /* polygon.c in Sources */,
 				A14ABF46240E021E00C9292A /* dpvsimpledecode.c in Sources */,
@@ -890,6 +887,7 @@
 				A14ABF53240E021E00C9292A /* r_lerpanim.c in Sources */,
 				A14ABECF240E021E00C9292A /* cd_sdl.c in Sources */,
 				A14ABF4D240E021E00C9292A /* lhnet.c in Sources */,
+				A1F0BA9A24102D370008C263 /* cap_avi.c in Sources */,
 				A14ABF4A240E021E00C9292A /* wad.c in Sources */,
 				A14ABECD240E021E00C9292A /* snd_ogg.c in Sources */,
 				A14ABED0240E021E00C9292A /* menu.c in Sources */,
