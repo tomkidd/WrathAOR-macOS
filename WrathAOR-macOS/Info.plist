@@ -28,9 +28,7 @@
 	<string>MainMenu</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
-	<key>NSSupportsAutomaticTermination</key>
-	<true/>
-	<key>NSSupportsSuddenTermination</key>
-	<true/>
+	<key>NSHighResolutionCapable</key>
+	<false/>
 </dict>
 </plist>
