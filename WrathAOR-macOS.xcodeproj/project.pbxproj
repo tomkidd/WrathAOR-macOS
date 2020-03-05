@@ -108,6 +108,9 @@
 		A14ABF5D240E021E00C9292A /* portals.c in Sources */ = {isa = PBXBuildFile; fileRef = A14ABEA6240E021E00C9292A /* portals.c */; };
 		A14ABF65240E097100C9292A /* snd_sdl.c in Sources */ = {isa = PBXBuildFile; fileRef = A14ABE68240E021E00C9292A /* snd_sdl.c */; };
 		A1F0BA9A24102D370008C263 /* cap_avi.c in Sources */ = {isa = PBXBuildFile; fileRef = A14ABE24240E021E00C9292A /* cap_avi.c */; };
+		A1F0BA9C24102E5B0008C263 /* libSDL2_mixer-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F0BA9B24102E5B0008C263 /* libSDL2_mixer-2.0.0.dylib */; };
+		A1F0BA9D24102E5B0008C263 /* libSDL2_mixer-2.0.0.dylib in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1F0BA9B24102E5B0008C263 /* libSDL2_mixer-2.0.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		A1F0BAA12411BB6D0008C263 /* kp1 in Resources */ = {isa = PBXBuildFile; fileRef = A1F0BAA02411BB6D0008C263 /* kp1 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -148,6 +151,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				A1F0BA9D24102E5B0008C263 /* libSDL2_mixer-2.0.0.dylib in Embed Frameworks */,
 				A14ABD85240E01B000C9292A /* SDL2.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -398,6 +402,8 @@
 		A14ABEA3240E021E00C9292A /* netconn.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = netconn.c; sourceTree = "<group>"; };
 		A14ABEA5240E021E00C9292A /* svvm_cmds.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = svvm_cmds.c; sourceTree = "<group>"; };
 		A14ABEA6240E021E00C9292A /* portals.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = portals.c; sourceTree = "<group>"; };
+		A1F0BA9B24102E5B0008C263 /* libSDL2_mixer-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL2_mixer-2.0.0.dylib"; path = "../../../../../opt/local/lib/libSDL2_mixer-2.0.0.dylib"; sourceTree = "<group>"; };
+		A1F0BAA02411BB6D0008C263 /* kp1 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = kp1; path = ../../wrath/kp1; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -405,6 +411,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1F0BA9C24102E5B0008C263 /* libSDL2_mixer-2.0.0.dylib in Frameworks */,
 				A14ABD84240E01B000C9292A /* SDL2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -415,6 +422,7 @@
 		A14ABD5A240DFF4F00C9292A = {
 			isa = PBXGroup;
 			children = (
+				A1F0BAA02411BB6D0008C263 /* kp1 */,
 				A14ABD65240DFF4F00C9292A /* WrathAOR-macOS */,
 				A14ABD87240E021D00C9292A /* wrath-darkplaces */,
 				A14ABD64240DFF4F00C9292A /* Products */,
@@ -456,6 +464,7 @@
 		A14ABD83240E01B000C9292A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A1F0BA9B24102E5B0008C263 /* libSDL2_mixer-2.0.0.dylib */,
 				A14ABD74240E01A600C9292A /* SDL.xcodeproj */,
 			);
 			name = Frameworks;
@@ -799,6 +808,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1F0BAA12411BB6D0008C263 /* kp1 in Resources */,
 				A14ABD69240DFF5200C9292A /* Assets.xcassets in Resources */,
 				A14ABD6C240DFF5200C9292A /* MainMenu.xib in Resources */,
 			);
@@ -1055,6 +1065,10 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/local/lib,
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tomkiddconsulting.WrathAOR-macOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -1074,6 +1088,10 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/local/lib,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tomkiddconsulting.WrathAOR-macOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
