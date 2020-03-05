@@ -108,9 +108,13 @@
 		A14ABF5D240E021E00C9292A /* portals.c in Sources */ = {isa = PBXBuildFile; fileRef = A14ABEA6240E021E00C9292A /* portals.c */; };
 		A14ABF65240E097100C9292A /* snd_sdl.c in Sources */ = {isa = PBXBuildFile; fileRef = A14ABE68240E021E00C9292A /* snd_sdl.c */; };
 		A1F0BA9A24102D370008C263 /* cap_avi.c in Sources */ = {isa = PBXBuildFile; fileRef = A14ABE24240E021E00C9292A /* cap_avi.c */; };
-		A1F0BA9C24102E5B0008C263 /* libSDL2_mixer-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F0BA9B24102E5B0008C263 /* libSDL2_mixer-2.0.0.dylib */; };
-		A1F0BA9D24102E5B0008C263 /* libSDL2_mixer-2.0.0.dylib in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1F0BA9B24102E5B0008C263 /* libSDL2_mixer-2.0.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		A1F0BAA12411BB6D0008C263 /* kp1 in Resources */ = {isa = PBXBuildFile; fileRef = A1F0BAA02411BB6D0008C263 /* kp1 */; };
+		A1F0BAAC2411BFE30008C263 /* libogg.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F0BAAB2411BFE30008C263 /* libogg.dylib */; };
+		A1F0BAAD2411BFE30008C263 /* libogg.dylib in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1F0BAAB2411BFE30008C263 /* libogg.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		A1F0BAB02411C00F0008C263 /* libvorbisfile.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F0BAAE2411C00F0008C263 /* libvorbisfile.dylib */; };
+		A1F0BAB12411C00F0008C263 /* libvorbisfile.dylib in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1F0BAAE2411C00F0008C263 /* libvorbisfile.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		A1F0BAB22411C00F0008C263 /* libvorbis.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F0BAAF2411C00F0008C263 /* libvorbis.dylib */; };
+		A1F0BAB32411C00F0008C263 /* libvorbis.dylib in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1F0BAAF2411C00F0008C263 /* libvorbis.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -151,7 +155,9 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				A1F0BA9D24102E5B0008C263 /* libSDL2_mixer-2.0.0.dylib in Embed Frameworks */,
+				A1F0BAB12411C00F0008C263 /* libvorbisfile.dylib in Embed Frameworks */,
+				A1F0BAB32411C00F0008C263 /* libvorbis.dylib in Embed Frameworks */,
+				A1F0BAAD2411BFE30008C263 /* libogg.dylib in Embed Frameworks */,
 				A14ABD85240E01B000C9292A /* SDL2.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -402,8 +408,10 @@
 		A14ABEA3240E021E00C9292A /* netconn.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = netconn.c; sourceTree = "<group>"; };
 		A14ABEA5240E021E00C9292A /* svvm_cmds.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = svvm_cmds.c; sourceTree = "<group>"; };
 		A14ABEA6240E021E00C9292A /* portals.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = portals.c; sourceTree = "<group>"; };
-		A1F0BA9B24102E5B0008C263 /* libSDL2_mixer-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL2_mixer-2.0.0.dylib"; path = "../../../../../opt/local/lib/libSDL2_mixer-2.0.0.dylib"; sourceTree = "<group>"; };
 		A1F0BAA02411BB6D0008C263 /* kp1 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = kp1; path = ../../wrath/kp1; sourceTree = "<group>"; };
+		A1F0BAAB2411BFE30008C263 /* libogg.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libogg.dylib; path = ../../../../../opt/local/lib/libogg.dylib; sourceTree = "<group>"; };
+		A1F0BAAE2411C00F0008C263 /* libvorbisfile.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libvorbisfile.dylib; path = ../../../../../opt/local/lib/libvorbisfile.dylib; sourceTree = "<group>"; };
+		A1F0BAAF2411C00F0008C263 /* libvorbis.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libvorbis.dylib; path = ../../../../../opt/local/lib/libvorbis.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -411,7 +419,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1F0BA9C24102E5B0008C263 /* libSDL2_mixer-2.0.0.dylib in Frameworks */,
+				A1F0BAB02411C00F0008C263 /* libvorbisfile.dylib in Frameworks */,
+				A1F0BAB22411C00F0008C263 /* libvorbis.dylib in Frameworks */,
+				A1F0BAAC2411BFE30008C263 /* libogg.dylib in Frameworks */,
 				A14ABD84240E01B000C9292A /* SDL2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -464,7 +474,9 @@
 		A14ABD83240E01B000C9292A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A1F0BA9B24102E5B0008C263 /* libSDL2_mixer-2.0.0.dylib */,
+				A1F0BAAF2411C00F0008C263 /* libvorbis.dylib */,
+				A1F0BAAE2411C00F0008C263 /* libvorbisfile.dylib */,
+				A1F0BAAB2411BFE30008C263 /* libogg.dylib */,
 				A14ABD74240E01A600C9292A /* SDL.xcodeproj */,
 			);
 			name = Frameworks;
