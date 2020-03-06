@@ -2,7 +2,7 @@
 
 This is a port of the of the game [WRATH: Aeon of Ruin](http://www.wrath.game/) based on [the source release](https://github.com/KillPixelGames/wrath-darkplaces) from KillPixel Games to macOS. 
 
-![menu screen](https://raw.githubusercontent.com/tomkidd/WrathAOR-macOS/master/wrath2.png)
+![menu screen](https://raw.githubusercontent.com/tomkidd/WrathAOR-macOS/master/wrath_menu.png)
 
 As of this writing, WRATH is only available on Windows, and although KillPixel plans to port it to macOS and other platforms, I thought I'd take a swing at getting it running on macOS from their provided source code. Since it is based on [DarkPlaces](https://icculus.org/twilight/darkplaces/), the odds of it compiling on macOS was high.
 
